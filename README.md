@@ -38,7 +38,7 @@ export default function AwesomeScreen() {
 ```
 
 ## Example
-![preview](https://s3.amazonaws.com/exp-brand-assets/ExpoIcon_200.png)
+
 
 ## Documentation
 
