@@ -1,0 +1,26 @@
+{
+  "extends": ["marlint", "plugin:flowtype/recommended"],
+  "parser": "babel-eslint",
+  "rules": {
+    "radix": [2, "as-needed"],
+    "no-nested-ternary": 1,
+    "react/jsx-handler-names": 1,
+    "react/forbid-foreign-prop-types": 1,
+    "react/forbid-prop-types": 1,
+    "import/no-unresolved": [2, { "ignore": ["^react$", "^react-native$", "^redux$", "^@storybook/"] }]
+  },
+  "plugins": ["import", "eslint-plugin-flowtype"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".android.js", ".ios.js", ".web.js"]
+      }
+    },
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  },
+  "globals": {
+    "__DEV__": true
+  }
+}
