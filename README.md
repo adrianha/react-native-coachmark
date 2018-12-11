@@ -1,5 +1,7 @@
 # React Native Coachmark
 
+![NPM Version](https://badge.fury.io/js/react-native-coachmark.svg) [![CircleCI](https://circleci.com/gh/traveloka/react-native-coachmark/tree/master.svg?style=shield&circle-token=ab2fa2d1fdea74636ee3132e16c82003cdc95383)](https://circleci.com/gh/traveloka/react-native-coachmark) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 ![preview](docs/demo.gif)
 
 ## Installation
@@ -38,7 +40,8 @@ export default function AwesomeScreen() {
 ```
 
 ## Example
-![preview](https://i.ibb.co/n3VpkY4/Screen-Shot-2018-12-04-at-13-53-26.png)
+[![preview](https://i.ibb.co/n3VpkY4/Screen-Shot-2018-12-04-at-13-53-26.png)](https://snack.expo.io/@jekiwijaya/react-native-coachmark)
+
 [View on Expo!](https://snack.expo.io/@jekiwijaya/react-native-coachmark)
 
 ## Documentation
