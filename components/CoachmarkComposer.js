@@ -6,7 +6,7 @@ export default class CoachmarkComposer {
   show() {
     return this.coachmarks.reduce((acc, curr) => {
       return acc.then(() => {
-        if (curr.current.show) return curr.current.show();
+        if (curr.current && curr.current.show) return curr.current.show();
         return curr.show();
       });
     }, Promise.resolve());

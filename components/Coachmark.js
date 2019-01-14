@@ -11,6 +11,7 @@ export default class Coachmark extends Component {
     onHide: PropTypes.func,
     onShow: PropTypes.func,
     isAnchorReady: PropTypes.bool,
+    renderArrow: PropTypes.func
   };
 
   static defaultProps = {
@@ -18,6 +19,7 @@ export default class Coachmark extends Component {
     onHide: () => {}, // eslint-disable-line no-empty-function
     onShow: () => {}, // eslint-disable-line no-empty-function
     isAnchorReady: true,
+    renderArrow: null
   };
 
   constructor(props) {
@@ -131,6 +133,7 @@ export default class Coachmark extends Component {
           x={this.state.childStyle.left + this.state.childStyle.width / 2}
           position={this.state.position}
           message={this.props.message}
+          renderArrow={this.props.renderArrow}
         />
       </View>
     );
