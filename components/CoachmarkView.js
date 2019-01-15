@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import CoachmarkContent from './CoachmarkContent';
 import CoachmarkArrow, { K_POSITION_TOP, K_POSITION_BOTTOM } from './CoachmarkArrow';
 
@@ -10,7 +11,7 @@ export default class CoachmarkView extends Component {
 
   static defaultProps = {
     position: K_POSITION_TOP,
-    renderArrow: ({ x, position }) => <CoachmarkArrow x={x} position={position} />;
+    renderArrow: ({ x, position }) => <CoachmarkArrow x={x} position={position} />,
   };
 
   renderCoachmarkContent() {
@@ -20,7 +21,7 @@ export default class CoachmarkView extends Component {
   renderCoachmarkArrow() {
     const { renderArrow, ...rest } = this.props;
 
-    return renderArrow(...rest);
+    return renderArrow(rest);
   }
 
   render() {
