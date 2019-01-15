@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import CoachmarkContent from './CoachmarkContent';
 import CoachmarkArrow, { K_POSITION_TOP, K_POSITION_BOTTOM } from './CoachmarkArrow';
 
