@@ -10,7 +10,7 @@ export default class CoachmarkView extends Component {
 
   static defaultProps = {
     position: K_POSITION_TOP,
-    renderArrow: ({ x, position }) => <CoachmarkArrow x={x} position={position} />;
+    renderArrow: ({ x, position }) => <CoachmarkArrow x={x} position={position} />
   };
 
   renderCoachmarkContent() {
